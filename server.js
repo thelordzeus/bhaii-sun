@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const sdk = require('api')('@writesonic/v2.2#4enbxztlcbti48j');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
-const accountSid = "ACf9c41fa582521fcaa6553d4de408d49c";
-const authToken = "a703f4a607a5d4a9660cf880006f4502";
+const accountSid = "TWWILIO_ACCOUNT_SID";
+const authToken = "TWILLIO_ACCOUNT_AUTH_TOKEN";
 const client = require('twilio')(accountSid, authToken);
-sdk.auth('b99a5754-2c49-4af5-a12f-4c8e3b5ee141');
+sdk.auth('CHAT_SONIC_API');
 
 
 app.use(express.static('public'));
